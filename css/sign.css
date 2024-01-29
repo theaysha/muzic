@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    outline: none;
+    text-decoration: none;
+    border: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: white;
+    box-shadow: 2px 2px 50px 5px black;
+
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.form, .center, .male, .female{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.center{
+    gap: 5rem;
+}
+.form{
+    gap: 2rem;
+}
+.form label{
+    line-height: 3rem;
+    
+}
+.container form {
+    padding: 0 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+form p{
+    padding: 1,5rem 0rem;
+    font-weight: 600;
+    font-size: 2rem;
+
+}
+.container form button{
+    width: 100%;
+    padding: 0.5rem 0;
+    margin-top: 2rem;
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(to right, lightblue, purple);
+}
+.container form input{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #c0c0c0;
+}
+.last{
+    padding: 2rem;
+    text-align: center;
+    font-weight: 1.2rem;
+    font-weight: 500;
+}

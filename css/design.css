@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: sans-serif;
+ 
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    position: absolute;
+    width: 100%;
+}
+h1{
+    color: #fff;
+}
+
+nav a{
+    margin-left: 5rem;
+    font-size: larger;
+    color: #fff;
+}
+nav a:hover{
+
+        border-bottom: 2px solid aqua;
+    
+
+}
+
+section{
+    min-height: 100vh;
+    padding: 0rem 9% 0rem;
+    background: #000;
+}
+
+#home{
+    box-shadow: 0 0 100px black inset;
+}
+
+.container > h3:first-child{
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+
+.content{
+    display: flex;
+    align-items: center;
+    color: rgb(54, 201, 54);
+}
+
+.player{
+    transform: translateY(-10rem);
+    display: flex;
+    align-items: center; 
+    color: #fff;
+}
+
+.player i:nth-child(1){
+    font-size: 4rem;
+}
+
+.play input[type="range"]{
+    width: 60rem;
+    height: 0.2rem;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    background: #1a1a1a;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    padding-right: .5rem;
+}
+
+.episode .image{
+    position: relative;
+}
+
+.episode .image i{
+    font-size: 4rem;
+    color: rgb(41, 193, 41);
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.image i:hover{
+    background-color: rgb(54, 201, 54);
+    color: #fff;
+}
+
+.box_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 1rem;
+
+}
+
+.box_items h1{
+    font-size: 2.8rem;
+    /* margin-left: 2rem; */
+}
+
+.box_items{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 1rem;
+
+}
+
+
+.box_items h3,
+.box_items p{
+    color: #fff;
+}
+
+.box img{
+    width: 20rem;
+}
+
+.cards{
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fill,minmax(500px, 1fr));
+    /* justify-items: stretch; */
+    /* grid-auto-rows: 300px; */
+    grid-gap: 2.5rem;
+}
+
+.card_item{
+    display: flex;
+    flex-direction: column;
+    background: #1a1a1a;
+}
+
+.card_content{
+    color: #fff;
+    overflow: hidden;
+    padding: 1rem 2rem;
+}
+
+.card_content img{
+    width: 100%;
+}
+
+.about{
+    background: #1a1a1a;
+    margin-top: 3rem;
+    text-align: center;
+    color: #fff;
+}
+
+.mail form{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+form input{
+    width: 30rem;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: lighter;
+    border: none;
+    background: #282828;
+}
+
+form button{
+    width: 15rem;
+    border: none;
+    background: rgb(54, 201, 54);
+    font-size: 2rem;
+}
+
+form button i{
+    color: #fff;
+}
+
+.main{
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.main {
+    color: #fff;
+}
+
+.ab1 ul{
+    list-style: none;
+}
+
+.ab1 a{
+    color: #fff;
+}
+
+.div3 i{
+    font-size: 2rem;
+    color: #fff;
+}
+
+    #menu_icon{
+        color: #fff;
+        font-size: 2rem;
+        display: none;
+    }
+
+    #music_player{
+        padding: 1.5rem 3rem;
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+    }
+
+    .mini_player{
+        position: fixed;
+        background: #ff0101;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 20rem;
+        transform: translateY(100%);
+        transition: 0.8s;
+    }
+
+    .active{
+        transform: translateY(0);
+    }
+
+    .mini_player .control i{
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    @media(max-width: 1080px) {
+        html{
+            font-size: 80%;
+        }
+        header nav{
+            display: none;
+        }
+
+        #menu_icon{
+            display: flex;
+        }
+
+        .player{
+            display: none;
+        }
+        #music_player{
+            display: block;
+        }
+    }
+
+    @media(max-width: 768px){
+        html{
+            font-size: 70%;
+        }
+    }
