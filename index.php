@@ -1,4 +1,6 @@
-
+<?php
+    session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +20,8 @@
             <a href="">Pages</a>
             <a href="">About</a>
             <a href="">Contact</a>
+            <h4><?php echo $_SESSION['name'];?></h4>
+            <i class='bx bx-user-circle' id="user"></i>
             <!-- <i class='bx bxs-download'></i> -->
         </nav>
         <i class='bx bx-menu' id="menu_icon"></i>

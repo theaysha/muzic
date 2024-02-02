@@ -20,6 +20,16 @@ h1{
     color: #fff;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav h4{
+    color: #fff;
+}
+
 nav a{
     margin-left: 5rem;
     font-size: larger;
@@ -30,6 +40,11 @@ nav a:hover{
         border-bottom: 2px solid aqua;
     
 
+}
+
+#user{
+    font-size: 2rem;
+    color: #fff;
 }
 
 section{
