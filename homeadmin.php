@@ -1,5 +1,10 @@
 <?php
 $con = mysqli_connect("localhost", "root", "", "muzic");
+if(isset($_POST['del'])){
+    $dele = $_POST['del'];
+
+    $del_que = mysqli_query($con, "delete from user where id='$dele'");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,6 +35,7 @@ $con = mysqli_connect("localhost", "root", "", "muzic");
                 <th>UserName</th>
                 <th>Phone</th>
                 <th>Confirm PassWord</th>
+                <th>Access</th>
             </tr>
         <?php
             $query = mysqli_query($con,"select * from user");
@@ -46,6 +52,11 @@ $con = mysqli_connect("localhost", "root", "", "muzic");
             <td><?php echo $var["username"];?></td>
             <td><?php echo $var["Phonenumber"];?></td>
             <td><?php echo $var["Confirmpassword"];?></td>
+            <td>
+                <form action="" method="POST">
+                    <button value="<?php echo $var["id"];?>" name="del" style="color: #000;">Delete</button>
+                </form>
+            </td>
         </tr>
         <?php
          }
