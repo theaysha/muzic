@@ -3,21 +3,28 @@ $con = mysqli_connect("localhost", "root", "", "muzic");
 if(isset($_POST['del'])){
     $dele = $_POST['del'];
 
-    $del_que = mysqli_query($con, "delete from user where id='$dele'");
+    $del_que = mysqli_query($con, "delete from song where id='$dele'");
 }
 if(isset($_POST['sub'])) {
     $musicname= $_POST['musicname'];
    $lyrics = $_POST['lyrics'];
    $singername= $_POST['singername'];
-   $file = $_POST['file'];
-   $file = $_POST['folder'];
 
    if(isset($_FILES['file'])){
-        $imgname = $_FILES['file'];
-        echo '<pre>';
-        var_dump($imgname);
-        echo '</pre>';
-   }
+       $imgname = $_FILES['file']['name'];
+       $imgtype = $_FILES['file']['type'];
+       $tname = $_FILES['file']['tmp_name'];
+
+       move_uploaded_file($tname, 'upload/'.$imgname);
+    }
+    if(isset($_FILES['folder'])){
+        $songname = $_FILES['folder']['name'];
+        $songtype = $_FILES['folder']['type'];
+        $stname = $_FILES['folder']['tmp_name'];
+
+       move_uploaded_file($stname, 'upload/'.$songname);
+    }
+    $qury = mysqli_query($con, "insert into song (musicname,lyrics,singername,imagefilename,imagefiletype,audiofilename,audiofiletype) values('$musicname','$lyrics', '$singername','$imgname','$imgtype','$songname','$songtype')");
 }
 ?>
 
@@ -43,12 +50,12 @@ if(isset($_POST['sub'])) {
                 <a href="feedback.php">Feedback</a>
             </nav>
         </header>
-        <form action="" method="post">
+        <form action="" method="POST" enctype="multipart/form-data">
         <input name="musicname" type="text" placeholder="music_name" required>
-        <input name="lyrics" type="password" placeholder="lyrics" required>
-        <input name="singername" type="password" placeholder="singer_name" required>
-        <input type="file" name="file" required>
-        <input type="file" name="folder" required>
+        <input name="lyrics" type="text" placeholder="lyrics" required>
+        <input name="singername" type="text" placeholder="singer_name" required>
+        <input type="file" name="file" accept="image/jpeg, image/png" required>
+        <input type="file" name="folder" accept=".mp3, audio/*" required>
 
 
         <input type="submit" value="Login" class="ab" name="sub" />
@@ -66,6 +73,7 @@ if(isset($_POST['sub'])) {
                 <th>imagefiletype</th>
                 <th>audiofilename</th>
                 <th>audiofiletype</th>
+                <th>Access</th>
             </tr>
             <?php
             $query = mysqli_query($con, "select  * from song");

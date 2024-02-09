@@ -31,7 +31,7 @@ if (isset($_POST['sub'])) {
                     <input type="text" placeholder="Enter your name" name="fname"  required/>
                     <label>Email</label>
                     <input type="email" placeholder="Enter your email" name="email" required />
-                    <label>  Password</label>
+                    <label>  Password</label> 
                     <input type="password" placeholder="Enter your password" name="pass" required />
                  </div>
                  <div class="right">
