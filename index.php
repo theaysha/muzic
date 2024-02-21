@@ -169,7 +169,7 @@
                     <li><a href="">PODCAST</a></li>
                     <li><a href="">PAGES</a></li>
                     <li><a href="">ABOUT US</a></li>
-                    <li><a href="">CONTACTS</a></li>
+                    <li><a href="contact.php">CONTACTS</a></li>
                     
 
                 </ul>   
