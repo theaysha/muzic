@@ -4,13 +4,17 @@ $con = mysqli_connect("localhost","root","", "muzic");
      $email = $_POST['email'];
     $pass = $_POST['pass'];
     $querry = mysqli_query($con, "select * from user where Email = '$email' and Pass = '$pass' ");
-    if($querry){
+    $aquery = mysqli_query($con,"select * from admin where a_email = '$email' and a_pass = '$pass' ");
+    if($querry && $aquery){
       if($kuch_bhi = mysqli_fetch_array($querry)){
         session_start();
         $_SESSION['name'] = $kuch_bhi['Name'];
         $_SESSION['pass'] = $kuch_bhi['Pass'];
         header('location: index.php');
         echo "<script>alert('submit')</script>";
+      }else if($kuch_aur = mysqli_fetch_array($aquery)){
+        $_SESSION['a_name'] = $kuch_aur['a_name'];
+        header('location: admin.php');
       }else{
         echo "<script>alert('error')</script>";
       }
