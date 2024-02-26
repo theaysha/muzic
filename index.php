@@ -16,11 +16,11 @@
     <header>
         <h1>SOUNDCAST</h1>
         <nav>
-            <a href="#">Home</a>
+            <a href="#" class="aysha">Home</a>
             <a href="#">Podcast</a>                                
             <a href="">Pages</a>
             <a href="">About</a>
-            <a href="">Contact</a>
+            <a href="contact.php">Contact</a>
             <h4><?php echo $_SESSION['name'];?></h4>
             <i class='bx bx-user-circle' id="user"></i>
             <!-- <i class='bx bxs-download'></i> -->
