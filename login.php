@@ -43,7 +43,7 @@ $con = mysqli_connect("localhost","root","", "muzic");
         <p>Remember me? <a href="#">Forgot Password</a> </p>
         <input type="submit" value="Login" class="ab" name="sub" />
       </form>      
-      <p>Not a memeber? <a href="">Signup now</a></p>
+      <p>Not a memeber? <a href="register.php">Signup now</a></p>
     </div>
     <nav>
     

@@ -30,22 +30,22 @@ nav h4{
     color: #fff;
 }
 
-nav a{
+nav > a{
     margin-left: 5rem;
     font-size: larger;
     color: #fff;
 }
-nav a:hover{
+nav > a:hover{
+    border-bottom: 2px solid aqua;        
+}
 
-        border-bottom: 2px solid aqua;
-        
-        
-    }
-    
+#user:hover{
+    color: aqua;
+}
+
 .aysha{
-        color: aqua;
-        border-bottom: 2px solid aqua;
-
+    color: aqua;
+    border-bottom: 2px solid aqua;
 }
 
 #user{

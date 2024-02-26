@@ -22,7 +22,9 @@
             <a href="">About</a>
             <a href="contact.php">Contact</a>
             <h4><?php echo $_SESSION['name'];?></h4>
-            <i class='bx bx-user-circle' id="user"></i>
+            <div>
+                <a href="login.php"><i class='bx bx-user-circle' id="user"></i></a>
+            </div>
             <!-- <i class='bx bxs-download'></i> -->
         </nav>
         <i class='bx bx-menu' id="menu_icon"></i>

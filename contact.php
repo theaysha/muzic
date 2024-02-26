@@ -1,3 +1,20 @@
+<?php
+    $con = mysqli_connect('localhost','root','','muzic');
+    if(isset($_POST['sub'])){
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $msg = $_POST['msg'];
+
+        $qr = mysqli_query($con,"insert into contact (name, email, subject,message) values ('$name','$email','$subject','$msg')");
+
+        if($qr){
+            echo "<script>alert('Thanks for contact us')</script>";
+        }else{
+            echo "<script>alert('Something Went Worng')</script>";            
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,14 +43,14 @@
         <h1>Contact</h1>
         <div class="form_container">
             <div class="form">
-                <form action="">
+                <form action="" method="POST">
                     <div class="first">
-                        <input type="text" placeholder="Name">
-                        <input type="text" placeholder="Email">
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email">
                     </div>
-                    <input type="text" placeholder="Subject">
-                    <textarea name="" id="" cols="50" rows="10" placeholder="Your Message"></textarea>
-                    <input type="submit">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="msg" id="" cols="50" rows="10" placeholder="Your Message"></textarea>
+                    <input type="submit" name="sub">
                 </form>
             </div>
             <div class="contact_container">
