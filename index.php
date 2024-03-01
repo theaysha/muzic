@@ -90,7 +90,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card_item">
                         <div class="card_item">
                             <img src="background.jpg">
                             <div class="card_content">
@@ -107,7 +106,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
                     <div class="card_item">
                         <img src="background.jpg">
                         <div class="card_content">
@@ -172,8 +170,6 @@
                     <li><a href="">PAGES</a></li>
                     <li><a href="">ABOUT US</a></li>
                     <li><a href="contact.php">CONTACTS</a></li>
-                    
-
                 </ul>   
         </div>
         <div class="div1">

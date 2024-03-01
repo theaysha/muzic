@@ -163,9 +163,9 @@ section{
 .cards{
     display: grid;
     margin-top: 2rem;
-    grid-template-columns: repeat(auto-fill,minmax(500px, 1fr));
-    /* justify-items: stretch; */
-    /* grid-auto-rows: 300px; */
+    grid-template-columns: repeat(auto-fill,minmax(200px, 48%));
+    justify-content: center;
+    align-items: center;
     grid-gap: 2.5rem;
 }
 
@@ -223,6 +223,8 @@ form button i{
     display: flex;
     justify-content: space-between;
     padding: 2rem 9%;
+    flex-wrap: wrap;
+    gap: 2.5rem;
 }
 
 .main {
@@ -282,6 +284,9 @@ form button i{
 
     .form_container{
         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         gap: 2rem;
     }
 
@@ -324,16 +329,16 @@ form button i{
 
     @media(max-width: 1080px) {
         html{
-            font-size: 80%;
+            font-size: 50%;
         }
         header nav{
             display: none;
         }
-
+        
         #menu_icon{
             display: flex;
         }
-
+        
         .player{
             display: none;
         }
@@ -342,8 +347,15 @@ form button i{
         }
     }
 
-    @media(max-width: 768px){
-        html{
-            font-size: 70%;
+    @media(max-width: 975px){
+        .box{
+            flex-direction: column;
         }
+    }
+        
+    @media(max-width: 768px){
+            html{
+                font-size: 50%;
+            }
+            
     }
