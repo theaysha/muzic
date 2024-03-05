@@ -17,7 +17,7 @@
         <h1>SOUNDCAST</h1>
         <nav>
             <a href="#" class="aysha">Home</a>
-            <a href="#">Podcast</a>                                
+            <a href="podcast.php">Podcast</a>                                
             <a href="">Pages</a>
             <a href="">About</a>
             <a href="contact.php">Contact</a>

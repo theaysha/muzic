@@ -359,3 +359,44 @@ form button i{
             }
             
     }
+    .cover{
+        width: 400px;
+        height: 400px;
+    /* background: #1a1a1a; */
+    color: #fff;
+    display: flex;
+        
+
+    }
+    .pic{
+        width: 400px;
+        height: 200px;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    
+    .cover1{
+        width: 600px;
+        height: 800px;
+    background:aqua;
+    color: #fff;
+    display: flex;
+        
+
+    }
+    .pic1{
+        width: 400px;
+        height: 200px;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .pic3{
+        width: 400px;
+        height: 300px;
+    }
+
