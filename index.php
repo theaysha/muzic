@@ -19,7 +19,7 @@
             <a href="#" class="aysha">Home</a>
             <a href="podcast.php">Podcast</a>                                
             <a href="">Pages</a>
-            <a href="">About</a>
+            <a href="about.php">About</a>
             <a href="contact.php">Contact</a>
             <h4><?php echo $_SESSION['name'];?></h4>
             <div>

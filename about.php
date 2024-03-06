@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/design.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body bgcolor="black">
 <header>
@@ -23,69 +23,19 @@
             <!-- <i class='bx bxs-download'></i> -->
         </nav>
         <i class='bx bx-menu' id="menu_icon"></i>
-    </header>
-    <section>
-        <div class="cover">
-        <div class="pic">
-            <img class="pic3" src="background.jpg" alt="">
-            
-            <h3>December 21, 2015</h3>
-            <h1>EPISODE #07 - PODCAST EMBED FROM SOUNDCLOUD</h1>
-                        <p>This is a full card example, porro culpa minus ipsam a accusantium, cupiditate expedita accusamus, perspiciatis magni aliquid cumque facilis rerum eius. Ipsum facilis iste repudiandae ducimus accusamus...</p>
-
-
-        </div>
-        <div class="pic">
-            <img class="pic3" src="background.jpg" alt="">
-            
-            <h3>December 21, 2015</h3>
-            <h1>EPISODE #07 - PODCAST EMBED FROM SOUNDCLOUD</h1>
-                        <p>This is a full card example, porro culpa minus ipsam a accusantium, cupiditate expedita accusamus, perspiciatis magni aliquid cumque facilis rerum eius. Ipsum facilis iste repudiandae ducimus accusamus...</p>
-
-
-        </div><div class="pic">
-            <img class="pic3" src="background.jpg" alt="">
-            
-            <h3>December 21, 2015</h3>
-            <h1>EPISODE #07 - PODCAST EMBED FROM SOUNDCLOUD</h1>
-                        <p>This is a full card example, porro culpa minus ipsam a accusantium, cupiditate expedita accusamus, perspiciatis magni aliquid cumque facilis rerum eius. Ipsum facilis iste repudiandae ducimus accusamus...</p>
-
-
-        </div> 
+    </header>  
+    <div class="write">
+        <p class="about1">
+            Welcome to <b> muzic </b> - Your Ultimate Destination for Song Enthusiasts! <br> <br>
+            Our journey began with a shared passion for song  music and a desire to create a space where song lovers could connect, discover, and celebrate their favorite songs.Meet the Term: <br> <br>
+            -AYSHA, Founder of <b>muzic</b> <br> <br>
+            Our vision is to become the go-to platform for song enthusiasts worldwide,offering a curated selection of sonns news, reviews ,playlists,and a thriving communityof like-minded songs lovers. We believe that music is a communal experience .Join our vibrant community, participate in discussions, and share your songs discovries with fellow songs enthusiasts. <br><br>
+            Contact Us: Have questions or suggestions? Feel free to reach out to us at admin@muzic.com or through our contact form. <br><br>
+            Ready to dive into the world of music with us ? Explore our website, sign up for our newletter,and follow us on social media for the latest updates and music discoveries. <br> <br>
+            Thank you for joining us on this musical journey. Together, let' celebrates the universal language of song and create unforgettable moments through sound. 
+        </p>
 
     </div>
-    </section> <br>
-    <section>
-        <div class="cover 1">
-        <div class="pic1">
-            <img class="pic3" src="background.jpg" alt="">
-            
-            <h3>December 21, 2015</h3>
-            <h1>EPISODE #07 - PODCAST EMBED FROM SOUNDCLOUD</h1>
-                        <p>This is a full card example, porro culpa minus ipsam a accusantium, cupiditate expedita accusamus, perspiciatis magni aliquid cumque facilis rerum eius. Ipsum facilis iste repudiandae ducimus accusamus...</p>
-
-
-        </div>
-        <div class="pic1">
-            <img class="pic3" src="background.jpg" alt="">
-            
-            <h3>December 21, 2015</h3>
-            <h1>EPISODE #07 - PODCAST EMBED FROM SOUNDCLOUD</h1>
-                        <p>This is a full card example, porro culpa minus ipsam a accusantium, cupiditate expedita accusamus, perspiciatis magni aliquid cumque facilis rerum eius. Ipsum facilis iste repudiandae ducimus accusamus...</p>
-
-
-        </div><div class="pic1">
-            <img class="pic3" src="background.jpg" alt="">
-            
-            <h3>December 21, 2015</h3>
-            <h1>EPISODE #07 - PODCAST EMBED FROM SOUNDCLOUD</h1>
-                        <p>This is a full card example, porro culpa minus ipsam a accusantium, cupiditate expedita accusamus, perspiciatis magni aliquid cumque facilis rerum eius. Ipsum facilis iste repudiandae ducimus accusamus...</p>
-
-
-        </div> 
-
-    </div>
-    </section>
     <footer>
         <div class="main">
         <div class= "ab1">
@@ -200,6 +150,5 @@
         
 
     </footer>
-
 </body>
 </html>
