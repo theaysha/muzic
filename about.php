@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    $con = mysqli_connect('localhost','root','','muzic');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,16 +16,15 @@
 <header>
         <h1>SOUNDCAST</h1>
         <nav>
-            <a href="#" class="aysha">Home</a>
-            <a href="#">Podcast</a>                                
-            <a href="">Pages</a>
-            <a href="">About</a>
-            <a href="#">Contact</a>
-            <!-- <h4><?php echo $_SESSION['name'];?></h4> -->
-            <!-- <div>
+            <a href="index.php">Home</a>
+            <a href="podcast.php">Podcast</a>                                
+            <a href="page.php">Pages</a>
+            <a href="about.php" class="aysha">About</a>
+            <a href="contact.php">Contact</a>
+            <h4><?php echo $_SESSION['name'];?></h4>
+            <div>
                 <a href="login.php"><i class='bx bx-user-circle' id="user"></i></a>
-            </div> -->
-            <!-- <i class='bx bxs-download'></i> -->
+            </div>
         </nav>
         <i class='bx bx-menu' id="menu_icon"></i>
     </header>  
@@ -29,6 +33,7 @@
             Welcome to <b> muzic </b> - Your Ultimate Destination for Song Enthusiasts! <br> <br>
             Our journey began with a shared passion for song  music and a desire to create a space where song lovers could connect, discover, and celebrate their favorite songs.Meet the Term: <br> <br>
             -AYSHA, Founder of <b>muzic</b> <br> <br>
+            -Shahid, Co-Founder of <b>muzic</b> <br> <br>
             Our vision is to become the go-to platform for song enthusiasts worldwide,offering a curated selection of sonns news, reviews ,playlists,and a thriving communityof like-minded songs lovers. We believe that music is a communal experience .Join our vibrant community, participate in discussions, and share your songs discovries with fellow songs enthusiasts. <br><br>
             Contact Us: Have questions or suggestions? Feel free to reach out to us at admin@muzic.com or through our contact form. <br><br>
             Ready to dive into the world of music with us ? Explore our website, sign up for our newletter,and follow us on social media for the latest updates and music discoveries. <br> <br>

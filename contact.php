@@ -14,6 +14,9 @@
             echo "<script>alert('Something Went Worng')</script>";            
         }
     }
+    
+    session_start();
+    $con = mysqli_connect('localhost','root','','muzic');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,13 +31,15 @@
 <header>
         <h1>SOUNDCAST</h1>
         <nav>
-            <a href="index.php">Home</a>
-            <a href="#">Podcast</a>                                
-            <a href="">Pages</a>
-            <a href="">About</a>
-            <a href="" class="aysha">Contact</a>
-            <h4></h4>
-            <i class='bx bx-user-circle' id="user"></i>
+        <a href="index.php">Home</a>
+            <a href="podcast.php">Podcast</a>                                
+            <a href="page.php">Pages</a>
+            <a href="about.php">About</a>
+            <a href="contact.php" class="aysha">Contact</a>
+            <h4><?php echo $_SESSION['name'];?></h4>
+            <div>
+                <a href="login.php"><i class='bx bx-user-circle' id="user"></i></a>
+            </div>
             <!-- <i class='bx bxs-download'></i> -->
         </nav>
         <i class='bx bx-menu' id="menu_icon"></i>

@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $con = mysqli_connect('localhost','root','','muzic');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,15 +15,15 @@
 <header>
         <h1>SOUNDCAST</h1>
         <nav>
-            <a href="#" class="aysha">Home</a>
-            <a href="#">Podcast</a>                                
-            <a href="">Pages</a>
-            <a href="">About</a>
-            <a href="#">Contact</a>
-            <!-- <h4><?php echo $_SESSION['name'];?></h4> -->
-            <!-- <div>
+            <a href="index.php">Home</a>
+            <a href="podcast.php" class="aysha">Podcast</a>                                
+            <a href="page.php">Pages</a>
+            <a href="about.php">About</a>
+            <a href="contact.php">Contact</a>
+            <h4><?php echo $_SESSION['name'];?></h4>
+            <div>
                 <a href="login.php"><i class='bx bx-user-circle' id="user"></i></a>
-            </div> -->
+            </div>
             <!-- <i class='bx bxs-download'></i> -->
         </nav>
         <i class='bx bx-menu' id="menu_icon"></i>
