@@ -1,7 +1,9 @@
 <?php
     session_start();
     $con = mysqli_connect('localhost','root','','muzic');
+    $query = mysqli_query($con, "select * from song");
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +14,7 @@
     <link rel="stylesheet" href="css/design.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
 </head>
-<body>
+<body> 
     <header>
         <h1>SOUNDCAST</h1>
         <nav>
@@ -58,8 +60,8 @@
             <div class="episode">
                 <div class="box">
                     <div class="image">
-                        <img src="background.jpg" alt="">
-                        <i class='bx bx-play' ></i>
+                        <img src="<?php echo $exe['imagefilename']?>" alt="">
+                        <i class='bx bx-play'></i>
                     </div>
                     <div class="box_content">
                         <div class="box_items">
@@ -76,74 +78,28 @@
                     </div>
                 </div>
                 <div class="cards">
+                <?php
+                while($exe = mysqli_fetch_array($query)){
+            ?>
                     <div class="card_item">
                         <img src="background.jpg">
                         <div class="card_content">
                             <h3>December 21, 2015</h3>
-                            <h1>EPISODE #07 - PODCAST EMBED FROM SOUNDCLOUD</h1>
-                            <p>This is a full card example, porro culpa minus ipsam a accusantium, cupiditate expedita accusamus, perspiciatis magni aliquid cumque facilis rerum eius. Ipsum facilis iste repudiandae ducimus accusamus...</p>
+                            <h1><?php echo $exe["musicname"]?></h1>
+                            <p><?php echo $exe["lyrics"]?></p>
                             <div class="content">
-                                <h3>LIFESTYLE //</h3>
+                                <h3><?php echo $exe["singername"]?> //</h3>
                                     <h3> 45 MIN //</h3>
                                 <i class='bx bxs-download'></i>
                                 <h3>DOWNLOAD</h3> 
                             </div>
                         </div>
                     </div>
-                        <div class="card_item">
-                            <img src="background.jpg">
-                            <div class="card_content">
-                                <h3>December 21, 2015</h3>
-                                <h1>EPISODE #07 - PODCAST EMBED FROM SOUNDCLOUD</h1>
-                                <p>This is a full card example, porro culpa minus ipsam a accusantium, 
-                                    cupiditate expedita accusamus, perspiciatis magni aliquid cumque facilis rerum eius.
-                                     Ipsum facilis iste repudiandae ducimus accusamus...</p>
-                                <div class="content">
-                                    <h3>LIFESTYLE //</h3>
-                                        <h3> 45 MIN //</h3>
-                                    <i class='bx bxs-download'></i>
-                                    <h3>DOWNLOAD</h3> 
-                                </div>
-                            </div>
-                        </div>
-                    <div class="card_item">
-                        <img src="background.jpg">
-                        <div class="card_content">
-                            <h3>December 21, 2015</h3>
-                            <h1>EPISODE #07 - PODCAST EMBED FROM SOUNDCLOUD</h1>
-                            <p>This is a full card example, porro culpa minus ipsam a accusantium, 
-                                cupiditate expedita accusamus, perspiciatis magni aliquid cumque facilis rerum eius.
-                                 Ipsum facilis iste repudiandae ducimus accusamus...</p>
-                                 <div class="content">
-                                    <h3>LIFESTYLE //</h3>
-                                        <h3> 45 MIN //</h3>
-                                    <i class='bx bxs-download'></i>
-                                    <h3>DOWNLOAD</h3> 
-                                </div>
-                            
-                        </div>
-
+                    <?php }?>
+                
                         
-                    </div>
-                    <div class="card_item">
-                        <img src="background.jpg">
-                        <div class="card_content">
-                            <h3>December 21, 2015</h3>
-                            <h1>EPISODE #07 - PODCAST EMBED FROM SOUNDCLOUD</h1>
-                            <p>This is a full card example, porro culpa minus ipsam a accusantium, 
-                                cupiditate expedita accusamus, perspiciatis magni aliquid cumque facilis rerum eius.
-                                 Ipsum facilis iste repudiandae ducimus accusamus...</p>
-                                 <div class="content">
-                                    <h3>LIFESTYLE //</h3>
-                                        <h3> 45 MIN //</h3>
-                                    <i class='bx bxs-download'></i>
-                                    <h3>DOWNLOAD</h3> 
-                                </div>
-                            
-                        </div>
- 
-
-                    </div>
+                   
+                    
                 </div>
             </div>
         </section>

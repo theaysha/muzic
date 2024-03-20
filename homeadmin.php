@@ -54,7 +54,8 @@ if(isset($_POST['del'])){
             <td><?php echo $var["Confirmpassword"];?></td>
             <td>
                 <form action="" method="POST">
-                    <button value="<?php echo $var["id"];?>" name="del" style="color: #000;">Delete</button>
+                    <button value="<?php echo $var["id"];?>"
+                     name="del" style="color: #000;">Delete</button>
                 </form>
             </td>
         </tr>
