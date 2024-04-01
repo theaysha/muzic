@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="player">
-                <i class='bx bx-play-circle'></i>
+              <button class="circle">  <i class='bx bx-play-circle' id="player_btn"></i></button>
                 <label for="">00:00</label>
                 <div class="play">
                     <input type="range" name="" id="">
@@ -56,27 +56,6 @@
             </div>
         </section>
         <section>
-            <h1>ANOTHER EPISODES</h1>
-            <div class="episode">
-                <div class="box">
-                    <div class="image">
-                        <img src="<?php echo $exe['imagefilename']?>" alt="">
-                        <i class='bx bx-play'></i>
-                    </div>
-                    <div class="box_content">
-                        <div class="box_items">
-                            <h3>December 21, 2015</h3>
-                        <h1>EPISODE #07 - PODCAST EMBED FROM SOUNDCLOUD</h1>
-                        <p>This is a full card example, porro culpa minus ipsam a accusantium, cupiditate expedita accusamus, perspiciatis magni aliquid cumque facilis rerum eius. Ipsum facilis iste repudiandae ducimus accusamus...</p>
-                        </div>
-                        <div class="content">
-                            <h3>LIFESTYLE //</h3>
-                                <h3> 45 MIN //</h3>
-                            <i class='bx bxs-download'></i>
-                            <h3>DOWNLOAD</h3> 
-                        </div>
-                    </div>
-                </div>
                 <div class="cards">
                 <?php
                 while($exe = mysqli_fetch_array($query)){
@@ -90,8 +69,9 @@
                             <div class="content">
                                 <h3><?php echo $exe["singername"]?> //</h3>
                                     <h3> 45 MIN //</h3>
-                                <i class='bx bxs-download'></i>
-                                <h3>DOWNLOAD</h3> 
+                                <i class='bx bx-play-circle'></i>
+                                <h3>PLAY</h3>
+                                <i class='bx bx-play-circle    abcd'></i>
                             </div>
                         </div>
                     </div>
