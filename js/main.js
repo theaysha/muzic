@@ -5,8 +5,9 @@
 //     mini_player.classList.toggle('active');
 // }
 
-let play_btn = document.getElementById("player_btn");
+let player_btn = document.getElementById("player_btn");
 let audio =  new Audio();
+let card_btn = Array.from(document.querySelectorAll('.card_content button'));
 
 
 player_btn.addEventListener('click', ()=>{
@@ -28,11 +29,20 @@ player_btn.addEventListener('click', ()=>{
 async function fetxh(){
     let a = await fetch("http://localhost/muzic/fetch.php");
     let data = await a.json();
-    console.log(data[4].audiofilename); 
-    play_btn.addEventListener('click',()=>{
-        audio.src = `upload/${data[4].audiofilename}`;
-        audio.play();
-    })   
+    console.log(data);
+    card_btn.forEach((elem,idx)=>{
+        elem.addEventListener('click',(ab)=>{
+            idx = parseInt(ab.target.id)
+            console.log(idx)
+            sname = ab.target = data[idx].musicname;
+            singname = ab.target = data[idx].singername;
+            adfile = ab.target = data[idx].audiofilename;
+            imgfile = ab.target = data[idx].imagefilename;
+            audio.src = `upload/${adfile}`;
+            audio.play();
+        })
+    })
+      
 }
 
 fetxh();

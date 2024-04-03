@@ -40,8 +40,8 @@
                     <h3>LIFESTYLE //</h3>
 
                         <h3> 45 MIN //</h3>
-                    <i class='bx bxs-download'></i>
-                    <h3>DOWNLOAD</h3> 
+                    <i class='bx bx-play-circle'></i>
+                    <h3>PLAY</h3> 
                 </div>
             </div>
             <div class="player">
@@ -61,7 +61,7 @@
                 while($exe = mysqli_fetch_array($query)){
             ?>
                     <div class="card_item">
-                        <img src="background.jpg">
+                        <img src="upload/<?php echo $exe["imagefilename"]?>">
                         <div class="card_content">
                             <h3>December 21, 2015</h3>
                             <h1><?php echo $exe["musicname"]?></h1>
@@ -71,7 +71,7 @@
                                     <h3> 45 MIN //</h3>
                                 <i class='bx bx-play-circle'></i>
                                 <h3>PLAY</h3>
-                                <i class='bx bx-play-circle    abcd'></i>
+                                <button class="abcd" value="<?php echo $exe["musicname"]?>"><i class='bx bx-play-circle' id="<?php echo $exe["id"]?>"></i></button>
                             </div>
                         </div>
                     </div>
