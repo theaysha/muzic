@@ -32,7 +32,7 @@
         <i class='bx bx-menu' id="menu_icon"></i>
     </header>
     <main>
-        <section id="home" style="background: radial-gradient(rgba(0,0,0,0),rgba(0,0,0,1)),url('mountain.jpg')">
+        <section id="home">
             <div class="container">
                 <h3>DECEMBER 2023</h3>
                 <h1 class="H1">EPISODE #08 - OUR VACATION</h1>
