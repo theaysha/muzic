@@ -85,7 +85,9 @@ section{
 .player{
     transform: translateY(-10rem);
     display: flex;
+    gap: 1rem;
     align-items: center; 
+    align-content: center;
     color: #fff;
 }
 
@@ -93,7 +95,7 @@ section{
     font-size: 4rem;
 }
 
-.play input[type="range"]{
+#play{
     width: 60rem;
     height: 0.2rem;
 }
@@ -412,6 +414,11 @@ form button i{
     background-color: transparent;
     border: none;
 }
+
+.circle i{
+    color: #fff;
+}
+
 .abcd{
     font-size: xx-large;
     background-color: transparent;

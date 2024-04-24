@@ -46,13 +46,11 @@
             </div>
             <div class="player">
               <button class="circle">  <i class='bx bx-play-circle' id="player_btn"></i></button>
-                <label for="">00:00</label>
-                <div class="play">
-                    <input type="range" name="" id="">
-                </div>
+                <label for="" id="runtime">00:00</label>
+                <input type="range" name="" id="play" value="0" min="0" max="100">
+                <label for="" id="main_duration">00:00</label>
                 <i class='bx bx-volume-full'></i>
-                <label for="">01:36</label>
-                <input type="range" name="" id="">  
+                <input type="range" name="" id="volume" min="0" max="100">  
             </div>
         </section>
         <section>
@@ -68,8 +66,8 @@
                             <p><?php echo $exe["lyrics"]?></p>
                             <div class="content">
                                 <h3><?php echo $exe["singername"]?> //</h3>
-                                    <h3> 45 MIN //</h3>
-                                <i class='bx bx-play-circle'></i>
+                                    <h3 class="duration"></h3>
+                                <!-- <i class='bx bx-play-circle'></i> -->
                                 <h3>PLAY</h3>
                                 <button class="abcd" value="<?php echo $exe["musicname"]?>"><i class='bx bx-play-circle' id="<?php echo $exe["id"]?>"></i></button>
                             </div>
