@@ -17,7 +17,7 @@ header{
     width: 100%;
 }
 h1{
-    color: #fff;
+    color:aqua;
 }
 
 nav{
@@ -62,9 +62,14 @@ section{
 #home{
     box-shadow: 0 0 100px black inset;
 }
+.container h1{
+    font-size: 5rem;
+    color:rgb(239, 160, 227);
 
-.container > h3:first-child{
-    color: #fff;
+}
+.container h3{
+    font-size: 3rem;
+    color:rgb(239, 160, 227);
 }
 
 .container{
@@ -264,8 +269,8 @@ form button i{
 
     .mini_player{
         position: fixed;
-        background: #ff0101;
-        display: flex;
+        background: bisque;
+        display: none;
         flex-direction: column;
         align-items: center;
         bottom: 0;
@@ -347,6 +352,9 @@ form button i{
         #music_player{
             display: block;
         }
+        .mini_player{
+            display: flex;
+        }
     }
 
     @media(max-width: 975px){
@@ -425,4 +433,12 @@ form button i{
     border: none;
     display: flex;
     color: lawngreen;
+}
+.triangle{
+    background-color: transparent;
+    border: none;
+}
+
+.triangle i{
+    color: #fff;
 }

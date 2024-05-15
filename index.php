@@ -34,14 +34,11 @@
     <main>
         <section id="home">
             <div class="container">
-                <h3>DECEMBER 2023</h3>
                 <h1 class="H1">EPISODE #08 - OUR VACATION</h1>
                 <div class="content">
                     <h3>LIFESTYLE //</h3>
 
-                        <h3> 45 MIN //</h3>
-                    <i class='bx bx-play-circle'></i>
-                    <h3>PLAY</h3> 
+                        <h3 id="min_duration"> 45 MIN</h3>
                 </div>
             </div>
             <div class="player">
@@ -66,7 +63,7 @@
                             <p><?php echo $exe["lyrics"]?></p>
                             <div class="content">
                                 <h3><?php echo $exe["singername"]?> //</h3>
-                                    <h3 class="duration"></h3>
+                                    <!-- <h3 class="duration">45 min //</h3> -->
                                 <!-- <i class='bx bx-play-circle'></i> -->
                                 <h3>PLAY</h3>
                                 <button class="abcd" value="<?php echo $exe["musicname"]?>"><i class='bx bx-play-circle' id="<?php echo $exe["id"]?>"></i></button>
@@ -210,13 +207,15 @@
     </footer> 
     <button id="music_player">Music</button>
     <div class="mini_player">
+        <h1 id="wname"></h1>
         <input type="range">
         <div class="control">
-            <i class='bx bx-skip-previous'></i>
-            <i class='bx bx-play-circle' ></i>
-            <i class='bx bx-skip-next' ></i>
+            <i class='bx bx-skip-previous' id="prev"></i>
+            <!-- <i class='bx bx-play-circle' ></i> -->
+            <button class="triangle">  <i class='bx bx-play-circle' id="music_btn"></i></button>
+            <i class='bx bx-skip-next' id="next"></i>
         </div>
     </div>
     <script src="js/main.js"></script>
 </body> 
-</html>    
+</html>         
